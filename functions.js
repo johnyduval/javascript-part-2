@@ -86,3 +86,29 @@ var arrayofObjects = [
 ];
 
 arrayofObjects.map(squareNum);
+
+// created a function called operationMaker
+
+function operationMaker (operation){
+    if (operation === 'add'){
+        return function add (n1, n2){
+    return n1 + n2;
+};
+    } else if (operation === 'mult'){
+        return function mult (n1, n2){
+    return n1 * n2;
+};
+    } else if (operation === 'substract'){
+        return function substract (n1, n2){
+    return n1 - n2;
+};
+    } else if (operation === 'div') {
+        return function div (n1, n2){
+    return n1/n2;
+};
+    }
+}
+
+
+var adder = operationMaker('mult');
+var sum = adder(5, 10);
