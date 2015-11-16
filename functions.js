@@ -58,3 +58,13 @@ function compareEmails (string1, string2){
 var objectEmails = [arrayOfObjects[0].email, arrayOfObjects[1].email];
 
 objectEmails.sort(compareEmails);
+
+// function should take a number and return its square
+
+function squareNumbers (num){
+    return num*num;
+}
+
+var numbers = [1, 2, 4, 12];
+numbers.map(squareNumbers);
+
