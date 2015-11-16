@@ -68,3 +68,21 @@ function squareNumbers (num){
 var numbers = [1, 2, 4, 12];
 numbers.map(squareNumbers);
 
+// function should be able to take an object and square its “num” property
+
+function squareNum (obj){
+    return obj.num * obj.num;
+}
+
+var arrayofObjects = [
+    {
+        num: 16,
+        name: 'Allen'
+    },
+    {
+        num: 4,
+        name: 'John'
+    }
+];
+
+arrayofObjects.map(squareNum);
